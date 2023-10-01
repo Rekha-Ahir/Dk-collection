@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Shirt from './components/Shirt';
+import Navtop from './components/Navtop';
 
-function App() {
+import { Categories } from './components/Categories';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  
+} from "react-router-dom";
+const App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+    <BrowserRouter>
+<Navtop/>
+<div className='container'>
+{/* <Carousels/> */}
+</div>
+
+<Routes>
+<Route  path="/" element ={<Categories/>}/> 
+<Route  path="/shirt" element ={<Shirt />}/> 
+<Route  path="/jeans" element ={<Shirt/>}/> 
+<Route  path="/t-shirt" element ={<Shirt />}/> 
+<Route  path="/dress" element ={<Shirt />}/> 
+</Routes>
+
+</BrowserRouter>
     </div>
+    </>
   );
 }
 

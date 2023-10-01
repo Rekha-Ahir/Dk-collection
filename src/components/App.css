@@ -1,0 +1,93 @@
+.navbar {
+    position: sticky;
+    background: white;
+    top: 0px;
+    border: 0px solid #e5e7eb;
+    box-shadow: 0px 18px #f2f6ff;
+
+}
+#logo {
+    margin: 3px 32px;
+    position: absolute;
+    top: 16px;
+}
+
+.navbar ul {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0.4rem 6rem;
+
+}
+
+.navbar ul li {
+ 
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: black;
+    
+    text-decoration: none;
+ 
+    padding: 3px 22px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+
+}
+.navbar ul li a:hover{
+    color: blue;
+}
+.hight{
+    height: 19rem;
+}
+.container {
+    margin-top: 4rem;
+}
+/* search bar */
+input[type="search"] {
+    padding: 3px 56px;
+    margin: 1rem 5rem;
+    border-radius: 16px;}
+
+/* for categories */
+section#service {       display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-top: 8rem;
+    
+}
+.box {
+    margin: 1rem 1rem;
+  
+    background: #f2f6ff;
+    padding: 1px 20px;}
+    .box img {
+        margin: 10px;
+        border-radius: 2rem;
+        /* border: 2px solid #e06d6; */
+        box-shadow: 6px 15px #d0c5c5;
+    }
+    /* next category */
+    section#service-jeans {
+        display: flex;
+        margin-top: 7rem;
+        justify-content: center;
+    }
+    #service-jeans .box {
+        border-radius: 0rem;
+        margin: 1rem 0.3rem;
+    background: #f2f6ff;
+    padding: 1px 11px;
+    }
+    #service-jeans .box img {
+        margin: 6px;
+        border-radius: 21rem;
+        height: 10rem;
+        width: 10rem;
+       
+        box-shadow:  6px 3px #d0c5c5;
+    }
