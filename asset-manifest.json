@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Dk-collection/static/css/main.903fa034.css",
+    "main.js": "/Dk-collection/static/js/main.f80463b2.js",
+    "static/js/787.9d2e87ca.chunk.js": "/Dk-collection/static/js/787.9d2e87ca.chunk.js",
+    "static/media/favicon.png": "/Dk-collection/static/media/favicon.c4aa062df38ab5437836.png",
+    "static/media/OIP.jpg": "/Dk-collection/static/media/OIP.44d9c3fc0167da2c2893.jpg",
+    "index.html": "/Dk-collection/index.html",
+    "main.903fa034.css.map": "/Dk-collection/static/css/main.903fa034.css.map",
+    "main.f80463b2.js.map": "/Dk-collection/static/js/main.f80463b2.js.map",
+    "787.9d2e87ca.chunk.js.map": "/Dk-collection/static/js/787.9d2e87ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.903fa034.css",
+    "static/js/main.f80463b2.js"
+  ]
+}
