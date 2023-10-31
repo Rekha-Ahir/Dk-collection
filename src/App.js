@@ -1,35 +1,51 @@
 // import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 import Shirt from './components/Shirt';
 import Navtop from './components/Navtop';
-
+import Footer  from './components/Footer';
 import { Categories } from './components/Categories';
+import LoadingBar from 'react-top-loading-bar'
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   
 } from "react-router-dom";
-const App =()=> {
+import Productdetail from './components/Productdetail';
+import ContState from './context/ContState';
+const App =(props)=> {
+  const[progress,setProgress]=useState(0)
   return (
     <>
+    <ContState>
     <div>
-    <BrowserRouter>
+    <HashRouter>
 <Navtop/>
-<div className='container'>
-{/* <Carousels/> */}
-</div>
+{/* <LoadingBar
+        height={3}
+        color='#f11946'
+        progress={progress}
+
+      /> */}
+
+
 
 <Routes>
-<Route  path="/" element ={<Categories/>}/> 
-<Route  path="/shirt" element ={<Shirt />}/> 
-<Route  path="/jeans" element ={<Shirt/>}/> 
-<Route  path="/t-shirt" element ={<Shirt />}/> 
-<Route  path="/dress" element ={<Shirt />}/> 
+<Route  path="/" element ={<Categories onClick={<Route  path="/shirt" exact component ={<Shirt catname="shirt" />}/>}/>}/>
+<Route  path="/shirt" element ={<Shirt catname="shirt"/>}/> 
+<Route  path="/jeans" element ={<Shirt catname="jeans"/>}/> 
+<Route  path="/t-shirt" element ={<Shirt catname="T-shirt"/>}/> 
+<Route  path="/dress" element ={<Shirt  catname="dress"/>}/> 
+
+<Route  path="/productdetail/:category" element ={<Productdetail  />}/> 
+
 </Routes>
 
-</BrowserRouter>
+</HashRouter>
+
     </div>
+    </ContState>
     </>
   );
 }

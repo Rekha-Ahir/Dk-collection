@@ -1,50 +1,82 @@
+*{
+    /* font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Space Mono', monospace;
+   font-family: 'Teko', sans-serif;
+    font-family: 'Ubuntu', sans-serif; 
+    
+}
+/* for phone */
+
 .navbar {
     position: sticky;
     background: white;
     top: 0px;
-    border: 0px solid #e5e7eb;
-    box-shadow: 0px 18px #f2f6ff;
+    border: 0px solid #868181;
+    box-shadow: 0px 4px #d0c5c5;
+overflow: hidden;
+}
 
+div#right {
+ 
+    display: flex;
+    margin: 0rem 1rem;
+}
+div#right input{
+    background-color:#e3dcdc;
+}
+#right span.material-symbols-outlined {
+    border: 2px solid #a9a6a6;
+    padding: 0rem 0.2rem;
+    background-color: #d0c5c5;
 }
 #logo {
-    margin: 3px 32px;
+    margin: 3px 28px;
     position: absolute;
-    top: 16px;
+    top: 6px;
 }
 
 .navbar ul {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    margin: 0.4rem 6rem;
+    margin: 0rem 4rem;
 
 }
 
 .navbar ul li {
  
-    padding: 1rem 1.2rem;
+    padding: 0.5rem 1rem;
     font-size: 1.4rem;
     list-style: none;
 }
 
 .navbar ul li a {
     color: black;
-    
+    font-size: 1.8rem;
     text-decoration: none;
  
-    padding: 3px 22px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 1px 2px;
+    font-family: 'Teko', monospace;
 
 
 }
 .navbar ul li a:hover{
-    color: blue;
+   
+    text-decoration: underline;
+    text-decoration-color:cadetblue ;
+    
 }
 .hight{
     height: 19rem;
 }
 .container {
     margin-top: 4rem;
+}
+div#carou {
+    margin-top: 2rem;
+    margin: 3rem;
 }
 /* search bar */
 input[type="search"] {
@@ -60,30 +92,33 @@ section#service {       display: flex;
         margin-top: 8rem;
     
 }
-.box {
+section#service .box {
     margin: 1rem 1rem;
   
-    background: #f2f6ff;
+    background: cadetblue;
     padding: 1px 20px;}
     .box img {
+        width: 15rem;
+    height: 17rem;
         margin: 10px;
         border-radius: 2rem;
-        /* border: 2px solid #e06d6; */
-        box-shadow: 6px 15px #d0c5c5;
+        border: 2px solid #868181;
+        box-shadow: 6px 15px #868181;
     }
     /* next category */
-    section#service-jeans {
+   .jeans {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 7rem;
         justify-content: center;
     }
-    #service-jeans .box {
+  .jeans .box {
         border-radius: 0rem;
         margin: 1rem 0.3rem;
-    background: #f2f6ff;
+    background: cadetblue;
     padding: 1px 11px;
     }
-    #service-jeans .box img {
+    .jeans .box img {
         margin: 6px;
         border-radius: 21rem;
         height: 10rem;
@@ -91,3 +126,146 @@ section#service {       display: flex;
        
         box-shadow:  6px 3px #d0c5c5;
     }
+    .pr-name ,.price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 9px 1px;
+    }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: cadetblue;
+    }
+    /* product detail */
+    div#right-container {
+        margin: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    div#left-container {
+        margin: 4rem 0rem;
+    }
+    div#product {
+        position: absolute;
+        /* top: 69%; */
+        margin-top: 5rem;
+        display: flex;
+        justify-content: left;}
+        #product .firstimg {
+            width: 42rem;
+            height: 25rem;
+        }
+        #product img {
+            width: 20rem;
+            height: 25rem;
+            margin: 1rem;
+        }
+        div#rating {
+            padding: 4px;
+            border: 2px solid #a9a6a6;
+            display: inline;
+            /* margin: 0rem; */
+        }
+        .size {
+            border: 2px solid;
+            padding: 1rem 0.2rem;
+            margin: 3rem 0rem;
+        }
+        .pbox p  {
+            border: 2px solid #a9a6a6;
+            display: inline;
+            border-radius: 5rem;
+            margin: 0px 13px;
+            padding: 14px;
+         color: #a9a6a6;;
+        }
+        .pbox li{
+color: #868181;
+
+        }
+        #left-container button {
+            margin: 8px;
+            padding: 10px 28px;
+           color: white;
+            background:rgb(159, 32, 137);
+        }
+        .pbox {
+            border: 2px solid  #e3dcdc;
+            border-radius:1rem ;
+            display: flex;
+            margin: 1rem 0rem;
+            /* height: 3rem; */
+            padding: 1rem 0.7rem;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+       
+            .pbox > * {
+                
+                margin: 0.5rem 0rem;
+            }
+            .productlist a {
+                color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+                text-decoration: none;
+                color: white;
+            }
+            @media only screen and  (min-width: 300px) and (max-width: 501px){
+                .navbar {
+                    /* position: sticky; */
+                    background:white;
+                    top: 0px;
+                    display: inline-block;
+                    border: 0px solid #868181;
+                    box-shadow: 0px 4px #d0c5c5;
+                    /* overflow: hidden; */
+                }
+                
+                .navbar ul {
+                    display: flex;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    margin: 1px 54px;
+                    padding: 0px 6px 0px 0px;
+                   
+                }
+                .navbar ul li {
+                    padding: 0px 4px;
+                   
+                    list-style: none;
+                }
+                .navbar ul li a {
+                    color: black;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    padding: 0px 2px;
+                    font-family: 'Teko', monospace;
+                    margin: -2px;
+                }
+                div#right {
+                    display: flex;
+                    margin: 2px 5px;
+                }
+                #logo {
+                    margin: 2px 2px;
+                    position: absolute;
+                    top: 0px;
+                    width: 40px;
+                }
+                div #product{
+                    display: block;
+                }
+                #product img{
+                    display: none;
+                }div#right-container {margin: auto;}
+                #product .firstimg{
+                    display:inline;
+                    margin: 0rem 2rem;
+                    width: 20rem;
+                    height: 20rem;
+                }
+            }

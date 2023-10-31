@@ -12,6 +12,8 @@ const Carousels = ()=> {
         <img
           className="d-inline  hight w-100"
           src={simg}
+          width={30}
+          height={50}
           alt="First slide"
         />
         <Carousel.Caption>
