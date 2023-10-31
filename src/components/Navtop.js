@@ -58,8 +58,8 @@ const Navtop = (props) => {
                 <div id="left">
 
                     <ul>
-<li>shirtf<a href="shirt.js"></a></li>
-                        {/* <li><Link to="/ ">Home</Link></li> */}
+{/* <li>shirtf<a href="shirt.js"></a></li> */}
+                        <li><Link to="/ ">Home</Link></li>
                         <li><Link to="/shirt">Shirt </Link></li>
                         <li><Link to="/jeans ">Jeans </Link></li>
                         <li><Link to="/T-shirt ">T-shirt</Link></li>
