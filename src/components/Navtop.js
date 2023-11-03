@@ -8,6 +8,7 @@ import "./App.css";
 
 const Navtop = (props) => {
     
+    
     const [search, setSearch] = useState('');
     function handleChange(e) {
         console.log(e.target.value);
@@ -62,7 +63,7 @@ const Navtop = (props) => {
                         <li><Link to="/ ">Home</Link></li>
                         <li><Link to="/shirt">Shirt </Link></li>
                         <li><Link to="/jeans ">Jeans </Link></li>
-                        <li><Link to="/T-shirt ">T-shirt</Link></li>
+                        <li><Link to="/tshirt ">T-shirt</Link></li>
                         <li><Link to="/dress ">Dress</Link></li>
 
                     </ul>

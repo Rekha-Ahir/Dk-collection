@@ -1,4 +1,9 @@
 import React from "react";
+import download from './icons8-call-50 (1).png'
+import what from './icons8-whatsapp-50.png'
+import insta from'./icons8-insta-50.png'
+import location from'./icons8-location-50.png'
+
 const Footer =()=>{
 
     return (<>
@@ -13,13 +18,25 @@ const Footer =()=>{
 
       <p className="text-body-secondary">© 2023</p>
     </div>
+    <div className='d-flex justify-content-between'>
+          <div className='icon'>
+            <img src={download} width={35} className='m-2 d-block'/>
+          <p className='text-black m-0 d-block' >6260202353</p>
+            <img src={location} width={35} className='m-2 d-block'/>
+          <p className='text-black m-0 d-block address' >Bholaram Ustad marg ,indore ,MP</p>
 
+          </div>
+         <div className='social d-flex justify-content-end m-4'>
+          <a href='https://chat.whatsapp.com/CQwdi6jutL15UCeLJg94sA' target='_blank'><img src={what} width={35} className='m-2'/></a>
+          <a href='https://www.instagram.com/d.k._collection_/' target='_blank'><img src={insta}  width={35} className='m-2'/></a></div>
+        </div>
+        
     <div className="col mb-3">
 
     </div>
 
     <div className="col mb-3">
-      <h5>Shirt</h5>
+      
       <ul className="nav flex-column">
         <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
         <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
@@ -29,27 +46,10 @@ const Footer =()=>{
       </ul>
     </div>
 
-    <div className="col mb-3">
-      <h5>Jeans</h5>
-      <ul className="nav flex-column">
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-      </ul>
-    </div>
+   
 
-    <div className="col mb-3">
-      <h5>Formal pants</h5>
-      <ul className="nav flex-column">
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-      </ul>
-    </div>
+  
+    
   </footer>
 </div> </>
     )

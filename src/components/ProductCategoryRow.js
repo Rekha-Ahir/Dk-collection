@@ -9,7 +9,7 @@ const ProductCategoryRow = (props) => {
     const[simple,setSimple]=useState(false)
     let { key, imageUrl, category, price,id } = props
     const pro = useContext(Context)
-    console.log("check", pro[0].category)
+    // console.log("check", pro[0].category)
     let handle = (e) => {
 setSimple(e.target.childNodes[0].wholeText)
 console.log(simple)
@@ -28,15 +28,8 @@ console.log(simple)
 
             console.log(match)
             console.log(match.indexOf(pname))
-            //       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            //           product[i].style.display = "";
-
-
-            //       } else {
-            //           product[i].style.display = "none";
-
-
-            //   }
+           
+    
         }
     }
 
@@ -44,14 +37,14 @@ console.log(simple)
 
         <>
         <NavLink to={`/productdetail/${category}`}>
+        <h1>{props.category}</h1>
          <div className="box">
 
-                <a>  <img src={imageUrl} alt="" />  </a>
-                {/* <li><Link to="/ ">Home</Link></li> */}
+                <a>  <img src={imageUrl} alt={category} />  </a>
+         
                
                      <h5 className="pr-name" >    {category}  </h5>
-                    
-                     {/* {simple && <Productdetail/>} */}
+                 
                      
 
                 <h6 className="price">{price}</h6>

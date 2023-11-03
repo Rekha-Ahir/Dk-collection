@@ -1,5 +1,5 @@
 import React  from "react";
-// import Product from "./Product";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Box =(prop)=>{
@@ -13,6 +13,7 @@ const Box =(prop)=>{
    
     return(
         <>
+         <NavLink to={`/productcategoryrow/${prop.name}`}>
          <div className="box " id="box">
                    <img src={prop.img} alt=""  ></img>
       
@@ -21,6 +22,7 @@ const Box =(prop)=>{
       </h5>
 
                 </div>
+                </NavLink>
 
         </>
     )
